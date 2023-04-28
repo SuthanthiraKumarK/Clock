@@ -1,0 +1,199 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(./Clock_Background1.gif);
+    background-size: cover;
+    }
+
+  .clock {
+    border-radius: 10%;
+    background: #7f769681;
+    background-size: cover;
+    font-family: "Montserrat";
+    border: 1px solid rgba(255, 242, 56, 0.575);
+    box-shadow: 2px 3px 18px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .wrap {
+    overflow: hidden;
+    position: relative;
+    width: 350px;
+    height: 350px;
+  }
+
+  
+  .hour, .minute {
+    position: absolute;
+    height: 100px;
+    width: 6px;
+    margin: auto;
+    top:-27%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(179, 13, 13);
+    transform-origin: bottom center;
+    box-shadow: 0 0 2px 0 rgb(0, 0, 0);
+    z-index: 1;
+  }
+
+  .minute {
+    position: absolute;
+    height: 130px;
+    width: 4px;
+    top: -38%;
+    left: 0;
+    background: rgb(102, 15, 15);
+    box-shadow: 0 0 2px 0 rgb(255, 255, 255);
+    transform: rotate(90deg);
+  }
+
+  .second {
+    position: absolute;
+    height: 140px;
+    width: 2px;
+    margin: auto;
+    top: -39%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 4px;
+    background: #000000;
+    transform-origin: bottom center;
+    box-shadow: 0 0 10px 0 rgb(255, 255, 255);
+    transform: rotate(180deg);
+    z-index: 1;
+  }
+
+  .dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    background: white;
+    border: 2px solid #1b1b1b;
+    border-radius: 100px;
+    margin: auto;
+    z-index: 1;
+  }
+
+  p{
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 22px rgb(255, 255, 255);
+    -webkit-text-stroke-width: 1px;   
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+  }
+
+.time p:nth-child(1){
+    position: absolute;
+    top: 1%;
+    left: 48%;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.time p:nth-child(2){
+  position: absolute;
+  top: 93%;
+  left: 49%;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.time p:nth-child(3){
+  position: absolute;
+  top: 47%;
+  left: 96%;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.time p:nth-child(4){
+  position: absolute;
+  top: 47%;
+  left: 1%;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.time p:nth-child(5){
+  position: absolute;
+  top: 5%;
+  left: 78%;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.time p:nth-child(6){
+  position: absolute;
+  top: 88%;
+  left: 78%;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.time p:nth-child(7){
+  position: absolute;
+  top: 5%;
+  left: 18%;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.time p:nth-child(8){
+  position: absolute;
+  top: 88%;
+  left: 18%;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.time p:nth-child(9){
+  position: absolute;
+  top: 25%;
+  left: 88%;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.time p:nth-child(10){
+  position: absolute;
+  top: 70%;
+  left: 88%;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.time p:nth-child(11){
+  position: absolute;
+  top: 25%;
+  left: 8%;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.time p:nth-child(12){
+  position: absolute;
+  top: 70%;
+  left: 8%;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
